@@ -159,6 +159,7 @@ $("#modalDueDate").datepicker({
 });
 
 var auditTask = function (taskEl) {
+    console.log(taskEl);
     var date = $(taskEl).find("span").text().trim();
 
     var time = moment(date, "L").set("hour", 17);
@@ -214,6 +215,13 @@ $("#remove-tasks").on("click", function () {
     }
     saveTasks();
 });
+
+// Audit Every 30 Minutes 
+setInterval(function() {
+  $(".card .list-group-item").each(function (el) {
+    auditTask(el);
+  });
+}, (1000 * 60) * 30);
 
 // load tasks for the first time
 loadTasks();
