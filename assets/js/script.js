@@ -114,18 +114,25 @@ $(".card .list-group").sortable({
     tolerance: "pointer",
     helper: "clone",
     activate: function (event) {
-        $(this).addClass("dropover"), $(".bottom-trash").addClass("bottom-trash-drag");
+        console.log("activate", this);
+        $(this).addClass("dropover");
+        $(".bottom-trash").addClass("bottom-trash-drag");
     },
     deactivate: function (event) {
-        $(this).removeClass("dropover"), $(".bottom-trash").removeClass("bottom-trash-drag");
+        console.log("deactivate", this);
+        $(this).removeClass("dropover");
+        $(".bottom-trash").removeClass("bottom-trash-drag");
     },
     over: function (event) {
-        $(event.target).addClass("dropover-active"), $(".bottom-trash").addClass("bottom-trash-active");
+        console.log("over", event.target);
+        $(this).addClass("dropover-active");
     },
     out: function (event) {
-        $(event.target).removeClass("dropover-active"), $(".bottom-trash").removeClass("bottom-trash-drag-active");
+        console.log("out", event.target);
+        $(this).removeClass("dropover-active");
     },
     update: function (event) {
+        // array to store task data in
         var tempArr = [];
 
         $(this)
@@ -156,9 +163,11 @@ $("#trash").droppable({
     },
     over: function (event, ui) {
         console.log("over");
+        $(this).addClass("bottom-trash-active");
     },
     out: function (event, ui) {
         console.log("out");
+        $(this).removeClass("bottom-trash-active");
     },
 });
 
