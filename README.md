@@ -1,5 +1,5 @@
-# UltraQueue
-Personal Kanban Style Queue
+# TaskmasterPro
+Kanban Style App
 
 - [x] [Add task editing](https://github.com/luc1dLife/taskmaster-pro/issues/1)
 - [x] [Update layout for new statuses](https://github.com/luc1dLife/taskmaster-pro/issues/2)
