@@ -132,9 +132,9 @@ $(".card .list-group").sortable({
         $(this).removeClass("dropover-active");
     },
     update: function (event) {
+        console.log("Update" + this);
         // array to store task data in
         var tempArr = [];
-
         $(this)
             .children()
             .each(function () {
@@ -149,7 +149,6 @@ $(".card .list-group").sortable({
             });
 
         var arrName = $(this).attr("id").replace("list-", "");
-
         tasks[arrName] = tempArr;
         saveTasks();
     },
@@ -157,19 +156,21 @@ $(".card .list-group").sortable({
 
 $("#trash").droppable({
     accept: ".card .list-group-item",
-    tolerance: "touch",
-    drop: function (event, ui) {
-        ui.draggable.remove();
+    tolerance: "touch", 
+    drop: function(event, ui) {
+      console.log("drop");
+      ui.draggable.remove()
+      $(".bottom-trash").removeClass("bottom-trash-active");
     },
-    over: function (event, ui) {
-        console.log("over");
-        $(this).addClass("bottom-trash-active");
+    over: function(event, ui) {
+      console.log("over");
+      $(".bottom-trash").addClass("bottom-trash-active");
     },
-    out: function (event, ui) {
-        console.log("out");
-        $(this).removeClass("bottom-trash-active");
-    },
-});
+    out: function(event, ui) {
+      console.log("out")
+      $(".bottom-trash").removeClass("bottom-trash-active");
+    }
+  });
 
 $("#modalDueDate").datepicker({
     minDate: 1,
