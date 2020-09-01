@@ -1,4 +1,4 @@
-# TaskmasterPro
+# Taskmaster Pro
 Kanban Style App
 
 - [x] [Add task editing](https://github.com/luc1dLife/taskmaster-pro/issues/1)
