@@ -14,3 +14,11 @@ h6 {
 ul.list-group {
   min-height: 130px;
 }
+
+.dropover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.dropover-active {
+  background-color: rgba(0,0,0,0.8);
+}
