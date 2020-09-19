@@ -1,6 +1,6 @@
 # Taskmaster Pro
 
-> Kanban style task manager concept.  
+> Kanban style task manager concept using jQuery/JS/HTML/CSS.  
 
 - [x] [Add task editing](https://github.com/MBrassey/taskmaster-pro/issues/1)
 - [x] [Update layout for new statuses](https://github.com/MBrassey/taskmaster-pro/issues/2)
