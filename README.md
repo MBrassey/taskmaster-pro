@@ -4,6 +4,7 @@ Kanban style task manager concept using jQuery/JS/HTML/CSS.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
+#### Issues
 - [x] [Add task editing](https://github.com/MBrassey/taskmaster-pro/issues/1)
 - [x] [Update layout for new statuses](https://github.com/MBrassey/taskmaster-pro/issues/2)
 - [x] [Add drag/drop capabilities](https://github.com/MBrassey/taskmaster-pro/issues/3)
