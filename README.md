@@ -1,10 +1,11 @@
-#### Taskmaster Pro
+## Taskmaster Pro
 
 Kanban style task manager concept using jQuery/JS/HTML/CSS.
 
 ![licensebadge](https://img.shields.io/badge/license-CC0_1.0_Universal-blue)
 
 #### Issues
+
 - [x] [Add task editing](https://github.com/MBrassey/taskmaster-pro/issues/1)
 - [x] [Update layout for new statuses](https://github.com/MBrassey/taskmaster-pro/issues/2)
 - [x] [Add drag/drop capabilities](https://github.com/MBrassey/taskmaster-pro/issues/3)
@@ -16,9 +17,11 @@ Kanban style task manager concept using jQuery/JS/HTML/CSS.
 [<p align="center"><img src="assets/img/Preview.gif">](https://MBrassey.github.io/taskmaster-pro/)
 
 #### Questions
+
 Contact me at [matt@brassey.io](mailto:matt@brassey.io) with any questions or comments.
 
 #### License
+
 `Taskmaster-Pro` is published under the __CC0_1.0_Universal__ license.
 
 > The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
